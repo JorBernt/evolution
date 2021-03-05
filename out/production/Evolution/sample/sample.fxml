@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="1000.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/11.0.1">
+    <children>
+        <AnchorPane fx:id="mainPane" layoutX="31.0" layoutY="50.0" prefHeight="500.0" prefWidth="600.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaeaea" height="500.0" stroke="BLACK"
+                           strokeType="INSIDE" width="600.0"/>
+            </children>
+        </AnchorPane>
+        <Button fx:id="startBtn" layoutX="679.0" layoutY="136.0" mnemonicParsing="false" onAction="#startBtn"
+                text="Start"/>
+        <TextField fx:id="txtNrStart" layoutX="755.0" layoutY="172.0" prefHeight="26.0" prefWidth="73.0"
+                   promptText="Nr of starting creatures" text="100"/>
+        <Button fx:id="updateBtn" layoutX="737.0" layoutY="136.0" mnemonicParsing="false" onAction="#updateBtn"
+                text="Update"/>
+        <Label fx:id="lblGen" layoutX="643.0" layoutY="404.0" text="Generation: "/>
+        <Label fx:id="lblSize" layoutX="645.0" layoutY="434.0" text="Avg size:  "/>
+        <Label fx:id="lblSpeed" layoutX="643.0" layoutY="452.0" text="Avg speed:  "/>
+        <TextField fx:id="txtFood" layoutX="754.0" layoutY="205.0" prefHeight="26.0" prefWidth="74.0" promptText="Food"
+                   text="100"/>
+        <TextField fx:id="txtDaytime" layoutX="755.0" layoutY="243.0" prefHeight="26.0" prefWidth="74.0"
+                   promptText="Daytime" text="500"/>
+        <Label fx:id="lblGen1" layoutX="638.0" layoutY="177.0" text="Creatures:"/>
+        <Label fx:id="lblGen11" layoutX="638.0" layoutY="210.0" text="Food:"/>
+        <Label fx:id="lblGen111" layoutX="638.0" layoutY="248.0" text="Daytime:"/>
+        <TextField fx:id="txtMutationRate" layoutX="756.0" layoutY="279.0" prefHeight="26.0" prefWidth="74.0"
+                   promptText="Mutation rate" text="5"/>
+        <Label fx:id="lblGen1111" layoutX="638.0" layoutY="284.0" text="Mutation rate:"/>
+        <TextField fx:id="txtStartSize" layoutX="756.0" layoutY="314.0" prefHeight="26.0" prefWidth="74.0"
+                   promptText="Mutation rate" text="2"/>
+        <TextField fx:id="txtStartSpeed" layoutX="756.0" layoutY="352.0" prefHeight="26.0" prefWidth="74.0"
+                   promptText="Mutation rate" text="2"/>
+        <Label fx:id="lblGen11111" layoutX="638.0" layoutY="318.0" text="Starting size:"/>
+        <Label fx:id="lblGen11112" layoutX="638.0" layoutY="356.0" text="Starting speed:"/>
+        <Label fx:id="lblEnergy" layoutX="641.0" layoutY="470.0" text="Avg energy:"/>
+        <Label fx:id="lblPopulation" layoutX="644.0" layoutY="520.0" prefHeight="18.0" prefWidth="211.0"
+               text="Population:"/>
+        <AnchorPane fx:id="graphPane" layoutX="850.0" layoutY="28.0" prefHeight="956.0" prefWidth="649.0"/>
+        <AnchorPane fx:id="graphPane2" layoutX="31.0" layoutY="562.0" prefHeight="385.0" prefWidth="600.0"/>
+        <Button fx:id="testBtn" layoutX="673.0" layoutY="68.0" mnemonicParsing="false" onAction="#testBtn" text="Test"/>
+        <Label fx:id="lblSense" layoutX="643.0" layoutY="497.0" text="Avg. sense:"/>
+        <TextField fx:id="txtStartSense" layoutX="756.0" layoutY="378.0" prefHeight="26.0" prefWidth="74.0"
+                   promptText="Sense rate" text="1"/>
+        <AnchorPane layoutX="639.0" layoutY="382.0">
+            <children>
+                <Label fx:id="lblGen111121" text="Start sense: "/>
+            </children>
+        </AnchorPane>
+        <Label fx:id="lblDayTime" layoutX="225.0" layoutY="18.0" prefHeight="18.0" prefWidth="211.0" text="Daytime:"/>
+    </children>
+</AnchorPane>
